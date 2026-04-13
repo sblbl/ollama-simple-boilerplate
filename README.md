@@ -1,4 +1,4 @@
-# Ollama Chat UI
+# Ollama simple boilerplates
 
 A minimal chat interface for Ollama.
 
