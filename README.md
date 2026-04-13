@@ -2,7 +2,9 @@
 
 A minimal chat interface for Ollama.
 
-<img src="https://media.tenor.com/AHBWsE2oYTgAAAAj/telus-critter.gif" alt="a lama" width="600">
+<p align="center">
+  <img src="https://media.tenor.com/AHBWsE2oYTgAAAAj/telus-critter.gif" alt="a lama" width="300">
+</p>
 
 ## Prerequisites
 
