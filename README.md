@@ -2,6 +2,8 @@
 
 A minimal chat interface for Ollama.
 
+<img src="https://media.tenor.com/AHBWsE2oYTgAAAAj/telus-critter.gif" alt="a lama" width="600">
+
 ## Prerequisites
 
 - [Python 3.11+](https://www.python.org/)
