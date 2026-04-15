@@ -3,11 +3,16 @@
 //          the response word by word
 // -------------------------------------------------
 
+function nomeFunzione(parametro, altroParametro) {
+  // si fanno cose
+
+}
+
 function sendPrompt(prompt, onToken, onError) {
   fetch("/chat", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ prompt: prompt }),
+    body: JSON.stringify({ prompt: prompt}),
   })
     .then(function (response) {
       // Read the response as a stream of text,

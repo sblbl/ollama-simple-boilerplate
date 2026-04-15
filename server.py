@@ -23,6 +23,7 @@ settings_file = Path("settings.json").read_text()
 SETTINGS = json.loads(settings_file)
 
 OLLAMA_MODEL = SETTINGS["ollama_model"]
+SYSTEM_PROMPT_1 = SETTINGS["system_prompt_1"]
 OLLAMA_URL = "http://localhost:11434/api/generate"
 
 
@@ -51,7 +52,7 @@ async def chat(request: ChatRequest):
             async with client.stream(
                 "POST",
                 OLLAMA_URL,
-                json={"model": OLLAMA_MODEL, "prompt": request.prompt},
+                json={"model": OLLAMA_MODEL, "prompt": request.prompt, "system" : SYSTEM_PROMPT_1},
             ) as response:
                 # Read each line from Ollama as it arrives
                 async for line in response.aiter_lines():
